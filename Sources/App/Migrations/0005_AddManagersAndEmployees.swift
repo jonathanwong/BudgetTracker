@@ -17,11 +17,6 @@ struct AddManagersAndEmployees: Migration {
       budget: 4000
     )
     _ = m1.save(on: database).map { m1 }
-//    return Employee(
-//      id: UUID(),
-//      firstName: "John",
-//      lastName: "Appleseed",
-//      managerID: m1.id!).save(on: database)
     _ = Employee(
       id: UUID(),
       firstName: "John",
